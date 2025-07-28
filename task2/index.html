@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: 3px solid rgb(253, 252, 252);
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        th {
+         background-color: #4752cb;
+        }
+        .blue { background-color: #ccddff; }
+        .yellow { background-color: #eee76a;}
+    
+    </style>
+</head>
+<body>
+
+<form>
+    <table>
+        <thead>
+             <tr>
+                <th class="yellow" colspan="2" style="color: red;"> Registration Form</th>
+            </tr>
+           
+             
+        </thead>
+       
+        <tbody>
+        
+            <tr>
+                <td class="blue">Enter Name</td>
+                <td class="blue"><input type="text" minlength="3" maxlength="10"></td>
+            </tr>
+             <tr>
+                <td class="blue">Enter Password</td>
+                <td class="blue"><input 
+            type="password" 
+            id="password" 
+            name="password" 
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" 
+            title="Must contain at least one number, one uppercase and lowercase letter, one special character, and at least 8 or more characters"
+            required>
+        </td>
+             <tr>
+                <td class="blue">Enter Address</td>
+                <td class="blue"><textarea  rows="4" cols="50">
+</textarea></td>
+                
+             <tr>
+                <td class="blue">Select Game</td>
+                <td class="blue">
+                 <br>
+                    <input type="checkbox" name="game" value="Hockey"><label>Hockey</label>
+                 </br>
+                <br>
+                 <input type="checkbox" name="game" value="Football"><label>Football</label>
+                </br>
+                <br>
+                 <input type="checkbox" name="game" value="Badminton"><label>Badminton</label>
+                </br>
+                <br>
+                 <input type="checkbox" name="game" value="Cricket"><label>Cricket</label>
+                </br>
+                <br>
+                 <input type="checkbox" name="game" value="Volleyball"><label>Volleyball</label>
+                 </br>
+                </td>
+                
+            </tr>
+             <tr>
+                <td class="blue">Gender</td>
+               <td class="blue">
+                <input type="radio" name="gender" value="Female"><label>Female</label>
+                <input type="radio" name="gender" value="Male"><label>Male</label>
+                </td>
+            </tr>
+             <tr>
+                <td class="blue">Select Your Age</td>
+                <td class="blue">
+                   <select name="age" required>
+                    <option selected disabled>Select</option>
+                   <option value="10-20">10-20</option>
+                   <option value="20-30">20-30</option>
+                   <option value="30-40">30-40</option>
+                   <option value="40-50">40-50</option>
+</select>
+                </td>
+                
+             <tr>
+                <td class="blue">Select Photo</td>
+                <td class="blue"> <input type="file" name="image" accept="image/png" /></td>
+                
+            </tr>
+
+            <tr>
+                <td colspan="2" class="blue">
+                <button type="button">Click Me</button>
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit Form">
+                </td>
+            </tr>
+            
+            
+        </tbody>
+    </table>
+</form>
+
+
+
+</body>
+</html>
