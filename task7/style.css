@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.continer{
+    width: 80%;
+    margin: auto;
+}
+.rec{
+    background-color: black;
+    width:10%;
+    padding:5%;
+    color:white;
+    font-size: 30px;
+}
+.icon-animation{
+    animation: spiner 5s 3s 5 alternate-reverse;
+}
+ .bg-img{
+    background-image: url(https://static.vecteezy.com/system/resources/thumbnails/018/878/331/small/empty-straight-road-with-marking-horizontal-highway-overhead-view-seamless-roadway-template-carriageway-element-of-city-map-vector.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 115%;
+    overflow: hidden;
+
+ }
+ .img{
+    width: 80px;
+    margin-top:5%;
+    height:200px;
+    animation: carmoving 4s infinite linear;
+ }
+ @keyframes carmoving{
+    from{
+        margin-left: 0%;
+
+    }
+    to{
+        margin-left: 100%;
+    }
+ }
