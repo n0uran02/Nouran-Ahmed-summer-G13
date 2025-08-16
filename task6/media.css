@@ -1,9 +1,9 @@
-/* Responsive styles for small screens (max 768px) */
+
 @media (max-width: 768px) {
     .hero{
         width: 100%;
     }
-      /* Navbar responsiveness if needed */
+     
   .nav{
     display: none;
   }
